@@ -182,6 +182,21 @@ function sendSignal(action, message){
 function createOfferer(peerUsername, receiver_channel_name){
 	var peer = new RTCPeerConnection(null);
 
+	// var peer = new RTCPeerConnection({
+	//   iceServers: [
+	//     {
+	//       urls: ["turns:turnserver.example.org", "turn:turnserver.example.org"],
+	//       username: "webrtc",
+	//       credential: "turnpassword"
+	//     },
+	//     {
+	//       urls: "stun: stunserver.example.org"
+	//     }
+	//   ]
+	// });
+	// https://developer.mozilla.org/en-US/docs/Web/API/RTCIceServer/urls
+
+
 	addLocalTracks(peer);
 
 	var dc = peer.createDataChannel('channel');
