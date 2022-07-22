@@ -195,6 +195,8 @@ function createOfferer(peerUsername, receiver_channel_name){
 	//   ]
 	// });
 	// https://developer.mozilla.org/en-US/docs/Web/API/RTCIceServer/urls
+	// https://dev.to/ethand91/webrtc-for-beginners-part-4-screen-share-42p6
+	// https://www.bloggernepal.com/2021/10/video-call-in-django-with-webrtc-and-channels.html
 
 
 	addLocalTracks(peer);
